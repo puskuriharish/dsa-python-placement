@@ -1,0 +1,10 @@
+def search_number(arr,key):
+    for i in range(len(arr)):
+        if arr[i]==key:
+            return i
+    else:
+        return -1
+        
+arr = [3,3,1,4,3,3,4,3]
+key = 4
+print(search_number(arr,key))

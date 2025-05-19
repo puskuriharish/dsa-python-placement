@@ -1,0 +1,7 @@
+from collections import Counter
+arr = [3,13,2,5,4,9,8,13,8,11,2,13]
+res = dict(Counter(arr))
+k = max(res.values())
+for i,v in res.items():
+    if k==v:
+        print(i)

@@ -1,0 +1,15 @@
+def search_number(arr,key):
+    for i in range(len(arr)):
+        if arr[i]==key:
+            return i
+    else:
+        return -1
+        
+arr = [3,3,1,4,3,3,4,3]
+key = 4
+print(search_number(arr,key))
+
+##Output : 3
+"""It is used for an unsorted array. 
+It mainly does one by one comparison of the item to be search with array elements.
+It takes linear or O(n) Time."""
